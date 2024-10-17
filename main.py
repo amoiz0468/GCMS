@@ -34,7 +34,7 @@ def is_collaborator_present(repo_name):
 
     url = f"{BASE_URL}/repos/{repo_name}/collaborators"
     response = requests.get(url, headers={
-        "Authorization": f"Bearer {"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"}",
+        "Authorization": f"Bearer {" "}",
         "Accept": "application/vnd.github+json",
         "X-GitHub-Api-Version": "2022-11-28"
     })
@@ -54,7 +54,7 @@ def remove_collaborator(repo_name):
 
     url = f"{BASE_URL}/repos/{repo_name}/collaborators/{COLLABORATOR_USERNAME}"
     response = requests.delete(url, headers={
-        "Authorization": f"Bearer {"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"}",
+        "Authorization": f"Bearer {" "}",
         "Accept": "application/vnd.github+json",
         "X-GitHub-Api-Version": "2022-11-28"
     })
