@@ -10,7 +10,7 @@ def get_repositories():
     while True:
         url = f"{BASE_URL}/user/repos?page={page}&per_page=100"
         response = requests.get(url, headers={
-            "Authorization": f"Bearer {"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"}",
+            "Authorization": f"Bearer {" "}",
             "Accept": "application/vnd.github+json",
             "X-GitHub-Api-Version": "2022-11-28"
         })
